@@ -1,8 +1,16 @@
 package _06_Intro_To_Hash_Maps;
 
+import java.util.HashMap;
+
+import javax.swing.*;
 
 public class _02_LogSearch {
-  /* 
+  HashMap <Integer, String> log = new HashMap<Integer, String>();
+  JFrame f = new JFrame("Samuel ListManager");
+  JButton add = new JButton("Add Entry");
+  JButton search = new JButton("Search list by ID");
+  JButton view = new JButton("View List");
+	/* 
 	 * Crate a HashMap of Integers for the keys and Strings for the values.
 	 * Create a GUI with three buttons. 
 	 * Button 1: Add Entry
@@ -29,5 +37,11 @@ public class _02_LogSearch {
 	 * 				is not in the list. 
 	 *
 	 * */
-	
+	public static void main(String[] args) {
+		_02_LogSearch ls = new _02_LogSearch();
+		ls.go();
+	}
+	void go(){
+		
+	}
 }

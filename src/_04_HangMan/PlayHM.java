@@ -61,6 +61,8 @@ public class PlayHM implements KeyListener {
 				if (lives == 0) {
 					JOptionPane.showMessageDialog(null, "YOU LOSE!!!!!", "SORE LOSER ALERT!",
 							JOptionPane.WARNING_MESSAGE);
+					f.dispose();
+					int playagainsel = JOptionPane.showConfirmDialog(null, "Wanna play again?");
 				}
 			}
 		}

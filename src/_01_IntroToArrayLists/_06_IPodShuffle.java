@@ -4,9 +4,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Random;
-import javax.swing.*;
 
-public class _06_IPodShuffle implements ActionListener{
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class _06_IPodShuffle implements ActionListener {
 	ArrayList<Song> songs = new ArrayList<Song>();
 	Song s0 = new Song("cat.mp3");
 	Song s1 = new Song("drums.mp3");
@@ -17,6 +20,7 @@ public class _06_IPodShuffle implements ActionListener{
 	Song s6 = new Song("wither.mp3");
 	Song s7 = new Song("train.mp3");
 	Song s8 = new Song("ocelot.mp3");
+
 	public _06_IPodShuffle() {
 		songs.add(s1);
 		songs.add(s2);
@@ -36,7 +40,7 @@ public class _06_IPodShuffle implements ActionListener{
 		f.setVisible(true);
 		f.pack();
 	}
-	
+
 	public static void main(String[] args) {
 		new _06_IPodShuffle();
 	}

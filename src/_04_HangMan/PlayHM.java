@@ -1,9 +1,9 @@
 package _04_HangMan;
 
-import java.awt.Cursor;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.Stack;
+import java.util.regex.Pattern;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -20,10 +20,10 @@ public class PlayHM implements KeyListener {
 	String word = Utilities.readRandomLineFromFile("dictionary.txt");
 
 	public PlayHM() {
-		f.addKeyListener(this);
 		p.add(l);
 		p.add(li);
 		f.add(p);
+		f.addKeyListener(this);
 		String nw = JOptionPane.showInputDialog(null,
 				"Type a number! Any number less than or equal to the number of words in dictionary.txt!",
 				"Word Select | Samuel HangMan", JOptionPane.PLAIN_MESSAGE);
@@ -53,10 +53,16 @@ public class PlayHM implements KeyListener {
 	public void keyPressed(KeyEvent e) {
 		System.out.println("Key");
 		if (e.getKeyCode() == KeyEvent.VK_A) {
-			String matchst = "a";
-			StringBuilder chword = new StringBuilder(word);
-			char match = matchst.charAt(0);
-			chword.setCharAt(word.indexOf(matchst), match);
+			if (Pattern.compile(Pattern.quote("a"), Pattern.CASE_INSENSITIVE).matcher(word).find()) {
+
+			} else {
+				lives -= 1;
+				li.setText("Lives left: " + lives + "!");
+				if (lives == 0) {
+					JOptionPane.showMessageDialog(null, "YOU LOSE!!!!!", "SORE LOSER ALERT!",
+							JOptionPane.WARNING_MESSAGE);
+				}
+			}
 		}
 		if (e.getKeyCode() == KeyEvent.VK_B) {
 

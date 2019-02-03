@@ -9,6 +9,7 @@ import java.util.Random;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class HangMan implements ActionListener {
@@ -92,4 +93,8 @@ public class HangMan implements ActionListener {
 			System.exit(10);
 		}
 	}
+void relaunch() {
+	PlayHM phm = new PlayHM();
+	f.setVisible(false);
+}
 }

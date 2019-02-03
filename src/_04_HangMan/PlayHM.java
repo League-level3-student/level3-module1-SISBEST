@@ -53,8 +53,11 @@ public class PlayHM implements KeyListener {
 	public void keyPressed(KeyEvent e) {
 		System.out.println("Key");
 		if (e.getKeyCode() == KeyEvent.VK_A) {
-			if (Pattern.compile(Pattern.quote("a"), Pattern.CASE_INSENSITIVE).matcher(word).find()) {
-
+			char c = 'a';
+			int start = 0;
+			while (word.indexOf((int) c, start >= 0)) {
+				start = word.indexOf((int) c, start);
+				System.out.println("found a");
 			} else {
 				lives -= 1;
 				li.setText("Lives left: " + lives + "!");

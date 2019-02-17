@@ -1,5 +1,6 @@
 package _04_HangMan;
 
+import java.applet.Applet;
 import java.awt.Cursor;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -9,10 +10,9 @@ import java.util.Random;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-public class HangMan implements ActionListener {
+public class HangMan extends Applet implements ActionListener {
 	JFrame f = new JFrame("Samuel HangMan");
 	JPanel p = new JPanel();
 	JLabel title = new JLabel("Samuel HangMan");
@@ -93,8 +93,9 @@ public class HangMan implements ActionListener {
 			System.exit(10);
 		}
 	}
-void relaunch() {
-	PlayHM phm = new PlayHM();
-	f.setVisible(false);
-}
+
+	void relaunch() {
+		PlayHM phm = new PlayHM();
+		f.setVisible(false);
+	}
 }

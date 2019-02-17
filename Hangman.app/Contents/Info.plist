@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>CFBundleExecutable</key>
+        <string>JavaApplicationStub</string>
+        <key>CFBundleGetInfoString</key>
+        <string>Hangman1.0, Copyright {user} 2004. All rights reserved.</string>
+        <key>CFBundleInfoDictionaryVersion</key>
+        <string>6.0</string>
+        <key>CFBundleIconFile</key>
+        <string>Hangman.icns</string>
+        <key>CFBundleIdentifier</key>
+        <string>level3-module1-SISBEST</string>
+        <key>CFBundleName</key>
+        <string>Hangman</string>
+        <key>CFBundlePackageType</key>
+        <string>APPL</string>
+        <key>CFBundleSignature</key>
+        <string>????</string>
+        <key>CFBundleVersion</key>
+        <string>1.0.1</string>
+        <key>Java</key>
+        <dict>
+            <key>JVMVersion</key>
+            <string>1.4*</string>
+            <key>MainClass</key>
+            <string>_04_HangMan.HangMan</string>
+            <key>Arguments</key>
+            <array/>
+            <key>ClassPath</key>
+            <string>$JAVAROOT/resources.jar:$JAVAROOT/rt.jar:$JAVAROOT/jsse.jar:$JAVAROOT/jce.jar:$JAVAROOT/charsets.jar:$JAVAROOT/jfr.jar:$JAVAROOT/cldrdata.jar:$JAVAROOT/dnsns.jar:$JAVAROOT/jfxrt.jar:$JAVAROOT/localedata.jar:$JAVAROOT/nashorn.jar:$JAVAROOT/sunec.jar:$JAVAROOT/sunjce_provider.jar:$JAVAROOT/sunpkcs11.jar:$JAVAROOT/zipfs.jar:$JAVAROOT/MRJToolkit.jar:$JAVAROOT/org.junit.jupiter.api_5.0.0.v20170910-2246.jar:$JAVAROOT/org.junit.jupiter.engine_5.0.0.v20170910-2246.jar:$JAVAROOT/org.junit.jupiter.migrationsupport_5.0.0.v20170910-2246.jar:$JAVAROOT/org.junit.jupiter.params_5.0.0.v20170910-2246.jar:$JAVAROOT/org.junit.platform.commons_1.0.0.v20170910-2246.jar:$JAVAROOT/org.junit.platform.engine_1.0.0.v20170910-2246.jar:$JAVAROOT/org.junit.platform.launcher_1.0.0.v20170910-2246.jar:$JAVAROOT/org.junit.platform.runner_1.0.0.v20170910-2246.jar:$JAVAROOT/org.junit.platform.suite.api_1.0.0.v20170910-2246.jar:$JAVAROOT/org.junit.vintage.engine_4.12.0.v20170910-2246.jar:$JAVAROOT/org.opentest4j_1.0.0.v20170910-2246.jar:$JAVAROOT/org.apiguardian_1.0.0.v20170910-2246.jar:$JAVAROOT/junit.jar:$JAVAROOT/org.hamcrest.core_1.3.0.v201303031735.jar:$JAVAROOT/jar_0.jar:$JAVAROOT/javazoom.jar</string>
+        </dict>
+    </dict>
+</plist>
